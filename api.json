@@ -1,38 +1,38 @@
 [
     {
-      "precio": 125000,
-      "id": 1,
-      "title": "PC123",
-      "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_664554-MLA48690667850_122021-AC.jpg"
+        "precio": 125000,
+        "id": 1,
+        "title": "PC123",
+        "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_664554-MLA48690667850_122021-AC.jpg"
     },
     {
-      "precio": 152000,
-      "id": 2,
-      "title": "PC456",
-      "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_975235-MLA50289081228_062022-AC.jpg"
+        "precio": 152000,
+        "id": 2,
+        "title": "PC456",
+        "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_975235-MLA50289081228_062022-AC.jpg"
     },
     {
-      "precio": 100000,
-      "id": 3,
-      "title": "PC789",
-      "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_954728-MLA50183566410_062022-AC.jpg"
+        "precio": 100000,
+        "id": 3,
+        "title": "PC789",
+        "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_954728-MLA50183566410_062022-AC.jpg"
     },
     {
-      "precio": 130050,
-      "id": 4,
-      "title": "PC321",
-      "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_823792-MLA48690642886_122021-AC.jpg"
+        "precio": 130050,
+        "id": 4,
+        "title": "PC321",
+        "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_823792-MLA48690642886_122021-AC.jpg"
     },
     {
-      "precio": 210000,
-      "id": 5,
-      "title": "PC654",
-      "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_785753-MLA48690820019_122021-AC.jpg"
+        "precio": 210000,
+        "id": 5,
+        "title": "PC654",
+        "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_785753-MLA48690820019_122021-AC.jpg"
     },
     {
-      "precio": 150000,
-      "id": 6,
-      "title": "PC987",
-      "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_910508-MLA50584591219_072022-AC.jpg"
+        "precio": 150000,
+        "id": 6,
+        "title": "PC987",
+        "thumbnailUrl": "https://http2.mlstatic.com/D_Q_NP_910508-MLA50584591219_072022-AC.jpg"
     }
-  ]
+]
