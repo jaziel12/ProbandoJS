@@ -5,7 +5,7 @@ body{
 
 .form{
     width: 340px;
-    height: 440px;
+    height: 500px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
@@ -69,8 +69,8 @@ button:hover{
 
 div{
     position: absolute;
-    bottom: -15px;
-    right: -20px;
+    bottom: 1px;
+    right: 10px;
     background: black;
     color: white;
     width: 320px;
