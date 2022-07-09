@@ -21,6 +21,7 @@ cards.addEventListener("click", e =>{
 items.addEventListener("click", e =>{
     btnAccion(e)
 })
+// Para traer productos
 const fetchData = async () => {
     try{ 
         const res = await fetch("api.json")
@@ -31,7 +32,7 @@ const fetchData = async () => {
         console.log(error)
     }
 }
-
+// Trae productos
 const pintarCards = data =>{
     data.forEach(producto => {
         templateCards.querySelector("h5").textContent = producto.title
@@ -45,6 +46,7 @@ const pintarCards = data =>{
     });
     cards.appendChild(fragment)
 }
+// Agregar al carrito
 const addCarrito = e => {
     if (e.target.classList.contains("btn-dark")){
         setCarrito(e.target.parentElement)
@@ -94,7 +96,7 @@ const pintarFooter = () => {
         `
         return
     }
-
+   // sumar cantidad y total
     const nCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad, 0)
     const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio,0)
 
@@ -111,9 +113,8 @@ const pintarFooter = () => {
         pintarCarrito()
     })
 }
-
+        //botones
 const btnAccion = e => {
-    //console.log(e.target)
     if(e.target.classList.contains("btn-info")){
         const producto = carrito[e.target.dataset.id]
         producto.cantidad++
