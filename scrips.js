@@ -33,7 +33,6 @@ const fetchData = async () => {
 }
 
 const pintarCards = data =>{
-   // console.log(data)
     data.forEach(producto => {
         templateCards.querySelector("h5").textContent = producto.title
         templateCards.querySelector("p").textContent = producto.precio
@@ -47,15 +46,12 @@ const pintarCards = data =>{
     cards.appendChild(fragment)
 }
 const addCarrito = e => {
-    //console.log(e.target)
-    //console.log(e.target.classList.contains("btn-dark"))
     if (e.target.classList.contains("btn-dark")){
         setCarrito(e.target.parentElement)
     }
     e.stopPropagation()
 }
 const setCarrito = objeto => {
-// console.log(objeto)
 
     const producto = {
         id: objeto.querySelector(".btn-dark").dataset.id,
@@ -71,7 +67,6 @@ const setCarrito = objeto => {
     pintarCarrito()
 }
 const pintarCarrito =  () => {
-    //console.log(carrito)
     items.innerHTML = ""
     Object.values(carrito).forEach(producto=>{
         templateCarrito.querySelector("th").textContent = producto.id
@@ -120,12 +115,10 @@ const pintarFooter = () => {
 const btnAccion = e => {
     //console.log(e.target)
     if(e.target.classList.contains("btn-info")){
-       // console.log(carrito[e.target.dataset.id])
-       // carrito[e.target.dataset.id]
-       const producto = carrito[e.target.dataset.id]
-       producto.cantidad++
-       carrito[e.target.dataset.id] = {...producto}
-       pintarCarrito()
+        const producto = carrito[e.target.dataset.id]
+        producto.cantidad++
+        carrito[e.target.dataset.id] = {...producto}
+        pintarCarrito()
     }
 
 
@@ -136,7 +129,6 @@ const btnAccion = e => {
             delete carrito[e.target.dataset.id]
         }
         pintarCarrito()
-
     }
     e.stopPropagation()
 
